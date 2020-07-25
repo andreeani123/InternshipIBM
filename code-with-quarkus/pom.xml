@@ -44,6 +44,13 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
+	  <dependency>
+	<groupId>org.acme.example </groupId>
+	<artifactId>external</artifactId>
+	<scope>system</scope>
+	<version>1.0.0-SNAPSHOT </version>
+	<systemPath>${basedir}\src\lib\external-1.0.0-SNAPSHOT.jar</systemPath>
+	</dependency>
   </dependencies>
   <build>
     <plugins>
@@ -111,16 +118,5 @@
       </properties>
     </profile>
   </profiles>
-  
-	<dependencies>
-	<!-- add this dependency -->
-	<dependency>
-	<groupId>org.acme.example </groupId>
-	<artifactId>external</artifactId>
-	<scope>system</scope>
-	<version>1.0.0-SNAPSHOT </version>
-	<systemPath>${basedir}\src\lib\external-1.0.0-SNAPSHOT.jar</systemPath>
-	</dependency>
-	</dependencies>
   
 </project>
